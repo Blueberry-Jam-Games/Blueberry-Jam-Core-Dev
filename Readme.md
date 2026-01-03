@@ -1,53 +1,7 @@
-Install with `Window -> Package Manager -> Add package from git URL` and use the url `https://github.com/Blueberry-Jam-Games/Blueberry-Core.git?path=/Packages/blueberry-jam-core`
+The main package is available through [Blueberry-Jam-Core-Package](https://github.com/Blueberry-Jam-Games/Blueberry-Jam-Core-Package).
 
-## To-Do List
+This repository is used for development, the package is configured as a submodule of this repository in `Packages`.
 
-### Coroutine Helpers (Kaiden) - **Done**
-- ~~Lambda next frame wait.~~
-- ~~Fixed update wait.~~
-- ~~Wait for End of Frame cache.~~
-- ~~WaitForFixedUpdate.~~
-- ~~WaitForEndOfFrame.~~
+Remember to use `--recursive` when cloning this repository to correctly set up development.
 
-### Debugging Helpers (Nate)
-- Print List Helper
-
-### Object Pool System (Kaiden) - **Done**
-- ~~System to object pool Unity GameObjects~~
-  - ~~Create objects in editor, in game, or as needed.~~
-  - ~~Different growth options. (well, v1 at least)~~
-- System to object pool non-Unity Objects (i.e., Non MonoBehaviours)
-  - StringBuilder (Nate)
-
-### Data Types
-- Serializable HashMap (Nate)
-- ~~2D Arrays~~
-
-### Level Loader (Connor)
-- ~~Scene transitioner.~~
-- ~~Easy to add new transitions.~~
-
-### Jenkins Integration (Connor)
-- I think we need a script to exist in the main project for it to work but even a template or library would be good.
-
-### Components
-- ~~Paper 2D Sprite Renderer~~ - **Done**
-
-### Pause Manager - **Done**
-
-### Shaders
-- Procreate PBR
-- Stylized Water
-- Transparency Shaders
-
-### Cheat Code Creator
-- Define cheat codes as a sequence or combination of buttons.
-- Trigger an event when a cheat code triggers.
-- Optionally mark codes as Development only or not.
-
-### Sound Engine - **Done**
-- ~~That 1 Brackys tutorial (it's in most of our past games)~~
-
-### Other:
-- Investigate GLTF Processes?
-- Bezier?
+The **Samples** of the package comes from the BJSamples folder. An editor script will copy the files into `Samples~` on project load and close. Or this can be done manually in the context menu with `Blueberry Jam -> Sync Samples`.

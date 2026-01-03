@@ -14,6 +14,7 @@ public class SoundManagerSample : MonoBehaviour
 
     private void Update()
     {
+#if ENABLE_LEGACY_INPUT_MANAGER
         if (Input.GetMouseButtonDown(0))
         {
             // left click
@@ -24,5 +25,6 @@ public class SoundManagerSample : MonoBehaviour
             // right click
             sounds.PlaySound("wand2");
         }
+#endif
     }
 }

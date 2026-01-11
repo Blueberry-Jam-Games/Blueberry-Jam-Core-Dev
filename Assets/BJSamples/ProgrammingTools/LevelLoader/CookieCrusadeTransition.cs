@@ -27,14 +27,14 @@ namespace BJ.Samples
         private float animationTime = 0.5f;
         private float walkTime = 2.0f;
 
-        private void Start ()
+        private void Start()
         {
             animationFrame = 0;
             gingerbreadSprite.sprite = animationSequence[animationFrame];
             timeLastAnimation = Time.time;
         }
 
-        private void Update ()
+        private void Update()
         {
             if (Time.time - timeLastAnimation >= secondsPerFrame)
             {
@@ -56,9 +56,9 @@ namespace BJ.Samples
             while (time < animationTime)
             {
                 time += Time.deltaTime;
-                float newAlpha = Mathf.Clamp01 (time / animationTime);
+                float newAlpha = Mathf.Clamp01(time / animationTime);
                 fadeGroup.alpha = newAlpha;
-                
+
                 yield return null;
             }
 
@@ -72,9 +72,9 @@ namespace BJ.Samples
             while (time < animationTime)
             {
                 time += Time.deltaTime;
-                float newAlpha = 1.0f - Mathf.Clamp01 (time / animationTime);
+                float newAlpha = 1.0f - Mathf.Clamp01(time / animationTime);
                 fadeGroup.alpha = newAlpha;
-                
+
                 yield return null;
             }
 
@@ -107,7 +107,7 @@ namespace BJ.Samples
             while (time < totalTime)
             {
                 time += Time.deltaTime;
-                gignerbreadMove.value = Mathf.Lerp (current, fProgress, time / totalTime);
+                gignerbreadMove.value = Mathf.Lerp(current, fProgress, time / totalTime);
 
                 yield return null;
             }

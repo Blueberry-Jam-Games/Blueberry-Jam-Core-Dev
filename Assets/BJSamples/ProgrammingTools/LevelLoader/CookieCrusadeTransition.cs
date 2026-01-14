@@ -49,7 +49,7 @@ namespace BJ.Samples
             }
         }
 
-        public override IEnumerator CurtainDown()
+        public override IEnumerator CurtainsDown()
         {
             float time = 0f;
 
@@ -65,7 +65,7 @@ namespace BJ.Samples
             fadeGroup.alpha = 1.0f;
         }
 
-        public override IEnumerator CurtainUp()
+        public override IEnumerator CurtainsUp()
         {
             float time = 0f;
 
@@ -81,13 +81,13 @@ namespace BJ.Samples
             fadeGroup.alpha = 0.0f;
         }
 
-        public override void JumpToCurtainDown()
+        public override void JumpToCurtainsDown()
         {
             fadeGroup.alpha = 1.0f;
             gignerbreadMove.value = 0f;
         }
 
-        public override void JumpToCurtainUp()
+        public override void JumpToCurtainsUp()
         {
             fadeGroup.alpha = 1.0f;
             gignerbreadMove.value = 0f;

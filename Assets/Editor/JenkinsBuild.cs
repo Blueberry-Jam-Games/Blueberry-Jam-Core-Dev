@@ -20,7 +20,7 @@ public class JenkinsBuild : Editor
         }
 
         build_player_options.scenes = scenes_from_settings;
-        build_player_options.locationPathName = "Build/Windows/Blueberry-Jam-Core.exe";
+        build_player_options.locationPathName = "builds/Blueberry-Jam-Core.exe";
         build_player_options.target = BuildTarget.StandaloneWindows64;
 
         build_player_options.options = BuildOptions.None;
@@ -52,7 +52,7 @@ public class JenkinsBuild : Editor
         }
 
         build_player_options.scenes = scenes_from_settings;
-        build_player_options.locationPathName = "Build/WebGL/Blueberry-Jam-Core";
+        build_player_options.locationPathName = "builds";
         build_player_options.target = BuildTarget.WebGL;
 
         build_player_options.options = BuildOptions.None;

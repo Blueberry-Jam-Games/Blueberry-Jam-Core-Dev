@@ -12,7 +12,7 @@ public class SyncSamples : Editor
     // Where we create the samples (that is, where they copy from)
     private static readonly string sourcePath = "Assets/BJSamples";
     // Where the samples are copied to (in this case, within the package)
-    private static readonly string destinationPath = "Packages/blueberry-jam-core/Samples~";
+    private static readonly string destinationPath = "Packages/io.blueberryjam.blueberry-jam-games.core/Samples~";
 
     /**
      * @brief Provides manual access to synchronize the samples from the toolbar.
